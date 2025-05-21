@@ -108,30 +108,11 @@ I am eager to learn more about your company and the role you are seeking to fill
 
 ## Deployment
 
-* **Docker**: Build and run with:
-
-  ```bash
-  docker build -t ai-cover-letter .
-  docker run -p 8501:8501 ai-cover-letter
-  ```
-* **Cloud Services**: Deploy the Streamlit app on platforms like Heroku, AWS, or GCP.
+* **Cloud Services**: Deploy the Streamlit app on ollama
 
 ## Troubleshooting
 
-* **JSONDecodeError**: Ensure prompts do not include extra braces or single quotes.
+* **JSONDecodeError** -- need to fix
 * **Model Loading Delays**: Consider caching the model locally or using a smaller variant for development.
 * **API Rate Limits**: Monitor your Hugging Face account usage.
 
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature-name`)
-3. Commit your changes (`git commit -m 'Add feature'`)
-4. Push to the branch (`git push origin feature-name`)
-5. Open a Pull Request
-
-Please follow the existing code style and write tests for new functionality.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
