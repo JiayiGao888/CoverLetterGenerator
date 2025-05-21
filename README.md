@@ -60,46 +60,11 @@ streamlit run app.py
 
 ## Prompt Templates
 
-* **Cover Letter Prompt**:
+* **Simple Cover Letter Prompt**:
 
   ```text
   You are an expert in job hunting and a cover letter writer.  Be persuasive and professional. Now, generate a cover letter for a data scientist position, begin your paragraph with:I am writing to express my strong interest in the XYS company's data science position
   ```
-* **Cover Letter Pro Prompt**:
-
-  ```text
-  You are a professional cover letter writing assistant. Using information provided below and the job description, create a personalized cover letter. Do not repeat yourself
-name of the applicant: Jiayi Gao
-experience:
-  title: Software Engineer
-  responsibilities:
-    - Developed and maintained web applications using React and Node.js
-    - Implemented CI/CD pipelines reducing deployment time by 40%
-    - Collaborated with cross-functional teams to deliver features on schedule
-
-education:
-  degree: Bachelor of Science in Computer Science
-
-skills:
-  - JavaScript
-  - React
-  - Node.js
-  - Python
-  - Git
-  - Docker
-  - AWS
-
-job Description:
-Software Engineer - Full Stack
-We are seeking a talented software engineer to join our team. The ideal Requirements:
-- 3+ years of experience in software development
-- Strong knowledge of JavaScript and frameworks like React
-- Experience with back-end technologies (Node.js preferred)
-
-start the cover letter as: I am writing to express my interest in the Tech Solutions Inc. software engineer position.
-```
-
-Customize these templates in `llm_instructions/` as needed.
 
 ## Model Improvement Examples
 
