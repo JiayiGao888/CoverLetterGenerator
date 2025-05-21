@@ -9,14 +9,13 @@ This project is an automated cover letter generation system powered by the Llama
 1. [Features](#features)
 2. [Prerequisites](#prerequisites)
 3. [Installation](#installation)
-4. [Configuration](#configuration)
-5. [Usage](#usage)
-6. [JSON Extraction Workflow](#json-extraction-workflow)
-7. [Prompt Templates](#prompt-templates)
-8. [Deployment](#deployment)
-9. [Troubleshooting](#troubleshooting)
-10. [Contributing](#contributing)
-11. [License](#license)
+4. [Usage](#usage)
+5. [JSON Extraction Workflow](#json-extraction-workflow)
+6. [Prompt Templates](#prompt-templates)
+7. [Deployment](#deployment)
+8. [Troubleshooting](#troubleshooting)
+9. [Contributing](#contributing)
+10. [License](#license)
 
 ---
 
@@ -46,29 +45,6 @@ This project is an automated cover letter generation system powered by the Llama
    pip install -r requirements.txt
    ```
 
-## Configuration
-
-1. **Resume Parser API Template**: Place `resume_parser_api.json` in `llm_instructions/`:
-
-   ```json
-   {
-     "prompt": "<your resume parser prompt template>",
-     ...
-   }
-   ```
-2. **Cover Letter API Template**: Place `cover_letter_api.json` in `llm_instructions/`:
-
-   ```json
-   {
-     "prompt": "<your cover letter prompt template>",
-     ...
-   }
-   ```
-3. **Environment Variables**:
-
-   ```bash
-   export HF_API_KEY=your_huggingface_api_key
-   ```
 
 ## Usage
 
