@@ -56,43 +56,49 @@ Run the Streamlit app:
 streamlit run app.py
 ```
 
-### Command-Line
 
-Use the `CoverLetterAI` class directly:
-
-```python
-from cover_letter import CoverLetterAI
-
-ai = CoverLetterAI(
-    resume_api_template='llm_instructions/resume_parser_api.json',
-    cover_letter_api_template='llm_instructions/cover_letter_api.json'
-)
-
-# Provide your resume text and job description
-profile = ai.profile_candidate()
-letter  = ai.generate_cover_letter(resume_text, job_description)
-print(letter)
-```
-
-## JSON Extraction Workflow
-
-1. **Fence Detection**: Search for text between `json` fences.
-2. **Brace Matching**: Identify balanced `{}` blocks.
-3. **Fallback Evaluation**: Use `ast.literal_eval` to parse Python-like literals.
-
-This routine achieves over 95% extraction reliability in testing.
 
 ## Prompt Templates
 
-* **Resume Parser Prompt**:
+* **cover letter Prompt**:
 
   ```text
-  You are a resume parser. Extract structured JSON from the following resume:
+  You are an expert in job hunting and a cover letter writer.  Be persuasive and professional. Now, generate a cover letter for a data scientist position, begin your paragraph with:I am writing to express my strong interest in the XYS company's data science position
   ```
-* **Cover Letter Prompt**:
+* **Cover Letter pro Prompt**:
 
   ```text
-  You are a professional cover letter writing assistant. Using the resume JSON and job description provided, generate a cover letter that highlights relevant experience and skills.
+  You are a professional cover letter writing assistant. Using information provided below and the job description, create a personalized cover letter. Do not repeat yourself
+
+name of the applicant: Jiayi Gao
+
+experience:
+  title: Software Engineer
+  responsibilities:
+    - Developed and maintained web applications using React and Node.js
+    - Implemented CI/CD pipelines reducing deployment time by 40%
+    - Collaborated with cross-functional teams to deliver features on schedule
+
+education:
+  degree: Bachelor of Science in Computer Science
+
+skills:
+  - JavaScript
+  - React
+  - Node.js
+  - Python
+  - Git
+  - Docker
+  - AWS
+
+job Description:
+Software Engineer - Full Stack
+We are seeking a talented software engineer to join our team. The ideal Requirements:
+- 3+ years of experience in software development
+- Strong knowledge of JavaScript and frameworks like React
+- Experience with back-end technologies (Node.js preferred)
+
+start the cover letter as: I am writing to express my interest in the Tech Solutions Inc. software engineer position.
   ```
 
 Customize these templates in `llm_instructions/` as needed.
