@@ -27,3 +27,15 @@ An AI-powered cover letter generator created by **Jiayi Gao** that:
 ```bash
 git clone https://github.com/jiayigao/cover-letter-generator.git
 cd cover-letter-generator
+
+
+### 2. Create Virtual Environment
+```bash
+python -m venv venv
+source venv/bin/activate  # Linux/Mac
+# OR
+venv\Scripts\activate     # Windows
+
+### 3. Install Requirements
+```bash
+pip install -r requirements.txt
