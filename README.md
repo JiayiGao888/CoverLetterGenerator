@@ -23,19 +23,13 @@ This project is an automated cover letter generation system powered by the Llama
 ## Features
 
 * **Personalized Output**: Generates customized cover letters that highlight relevant skills and experience.
-* **Multi-Stage JSON Extraction**: Reliable parsing of LLM output using:
 
-  * Regex-based fence detection (`json ...`)
-  * Brace matching algorithm
-  * Fallback to `ast.literal_eval` for malformed JSON
-* **Prompt Engineering**: Configurable templates to steer the LLM for optimal content.
-* **Streamlit UI**: Simple web interface for interactive use.
 
 ## Prerequisites
 
 * Python 3.8 or higher
 * `pip` for package management
-* Hugging Face API credentials with access to the `meta-llama/Llama-3.1-8B` model
+* Hugging Face API credentials with access to the `meta-llama/Llama-3.1-8B` model (if you don't have hugging face, I have my api token in file config.json)
 
 ## Installation
 
