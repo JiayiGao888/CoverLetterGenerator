@@ -10,12 +10,9 @@ This project is an automated cover letter generation system powered by the Llama
 2. [Prerequisites](#prerequisites)
 3. [Installation](#installation)
 4. [Usage](#usage)
-5. [JSON Extraction Workflow](#json-extraction-workflow)
-6. [Prompt Templates](#prompt-templates)
-7. [Deployment](#deployment)
-8. [Troubleshooting](#troubleshooting)
-9. [Contributing](#contributing)
-10. [License](#license)
+5. [Prompt Templates](#prompt-templates)
+6. [Deployment](#deployment)
+7. [Troubleshooting](#troubleshooting)
 
 ---
 
