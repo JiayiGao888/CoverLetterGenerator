@@ -36,8 +36,9 @@ This project is an automated cover letter generation system powered by the Llama
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/ai-cover-letter-generator.git
-   cd ai-cover-letter-generator
+   git clone https://github.com/JiayiGao888/CoverLetterGenerator.git
+   
+   cd CoverLetterGenerator
    ```
 2. Install dependencies:
 
