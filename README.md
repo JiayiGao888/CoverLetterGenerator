@@ -1,7 +1,7 @@
 # CoverLetterGenerator
 # AI Cover Letter Generator with Llama 3
 
-![AI Cover Letter Generator](https://img.shields.io/badge/Powered%20by-Llama%203.1-8B-orange)
+![AI Cover Letter Generator]([https://img.shields.io/badge/Powered%20by-Llama%203.1-8B-orange](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct))
 
 ## 📝 Project Description
 
